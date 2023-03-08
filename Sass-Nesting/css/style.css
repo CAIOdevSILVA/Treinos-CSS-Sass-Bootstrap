@@ -1,0 +1,19 @@
+.classe1 ul {
+  background-color: red;
+}
+.classe1 ul li {
+  text-align: center;
+  padding: 10px;
+  background-color: dodgerblue;
+}
+.classe1 .btn {
+  padding: 5px 5px;
+  background-color: chartreuse;
+  color: #000;
+}
+.classe1 .btn:hover {
+  background-color: darkgreen;
+  transition: 2s;
+}
+
+/*# sourceMappingURL=style.css.map */

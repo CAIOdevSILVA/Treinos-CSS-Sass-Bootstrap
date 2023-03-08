@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/*Para criar uma variavel no Sass.scss → $nome: valor*/
+.btn1 {
+  width: 65px;
+  background-color: #ff4043;
+}
+
+.btn2 {
+  width: 70px;
+  background-color: #ff4043;
+}
+
+/*# sourceMappingURL=style.css.map */

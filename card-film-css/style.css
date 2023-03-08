@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 450px;
+  background: #000;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.card .poster {
+  overflow: hidden;
+  position: relative;
+}
+
+.card .poster::before {
+  content : "";
+  position: absolute;
+  bottom: -165px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #000 50%, transparent);
+  transition: .5s;
+  z-index: 1;
+}
+
+.card:hover .poster::before {
+  bottom: 0;
+}
+
+.card .poster img {
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+}
+
+.card:hover .poster img {
+  filter: blur(5px);
+  transform: translateY(-50px);
+}
+
+.details {
+  position: absolute;
+  padding: 20px;
+  width: 100%;
+  height: 78%;
+  bottom: -165px;
+  left: 0;
+  transition: .5s;
+  z-index: 2;
+}
+
+.card:hover .details {
+  bottom: 0;
+}
+
+.details h2 {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.details h2 span {
+  font-size: 14px;
+  color: #ff9800;
+}
+
+.rating {
+  position: relative;
+  padding: 5px 0;
+}
+
+.rating span ion-icon {
+  color: #f7f406;
+  margin-right: 2px;
+  font-size: 16px;
+}
+
+.rating .note {
+  color: #fff;
+  padding: 0 5px;
+}
+
+.tags {
+  position: relative;
+  margin-top: 5px;
+}
+
+.tags span {
+  padding: 2px 5px;
+  margin-right: 2px;
+  color: #fff;
+  font-size: 12px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tags span.action {
+  background: #7206f7;
+}
+.tags span.adventure {
+  background: #f70661;
+}
+
+.info {
+  color: #fff;
+}
+
+.info p {
+  margin: 15px 0 10px;
+  font-size: 13px;
+}
+
+.star {
+  position: relative;
+}
+
+.star h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: #f7f406;
+}
+
+.star ul {
+  margin: 10px 0 0;
+  padding: 0;
+  display: flex;
+}
+
+.star ul li {
+  list-style: none;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 6px;
+  border: 2px solid #fff;
+}
+
+.star ul li img {
+  width: 100%;
+}

@@ -1,0 +1,10 @@
+.container {
+  background: #fff;
+  width: 100vw;
+  height: 100vh;
+}
+.container .normal-buttons {
+  margin-bottom: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */

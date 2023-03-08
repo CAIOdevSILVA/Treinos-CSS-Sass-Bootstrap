@@ -1,0 +1,9 @@
+#title{
+  color: mix(red, blue, 45%);
+}
+
+/*Para deixar o arquivo Css que sera gerado com o menor numero de linhas possivel, usa-se o minify, oqual comprime o 
+arquivo css para caber em uma unica linha
+
+Comando → sass sass/style.scss:css/style.css --style compressed
+*/
